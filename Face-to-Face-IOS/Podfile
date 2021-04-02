@@ -1,0 +1,43 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+abstract_target 'AntMediaWebRTCSDK' do
+  platform :ios, '10.0'
+  use_frameworks!
+  pod 'Starscream', '~> 3.1.1'
+
+  target 'AntMediaReferenceApplication' do
+#next line commented
+#pods for F2F
+
+  pod 'Firebase/Core'
+  pod 'FirebaseUI/Auth'
+  pod 'FirebaseUI/Google'
+  pod 'FirebaseUI/Phone'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+# add the Firebase pod for Google Analytics
+  pod 'Firebase/Analytics'
+# add pods for any other desired Firebase products
+# https://firebase.google.com/docs/ios/setup#available-pods
+
+
+
+  end
+
+  target 'WebRTCiOSSDK' do
+
+pod 'Firebase/Core'
+  pod 'FirebaseUI/Auth'
+  pod 'FirebaseUI/Google'
+  pod 'FirebaseUI/Phone'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn'
+# add the Firebase pod for Google Analytics
+  pod 'Firebase/Analytics'
+# add pods for any other desired Firebase products
+# https://firebase.google.com/docs/ios/setup#available-pods
+
+
+  end
+end
