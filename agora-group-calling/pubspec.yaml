@@ -25,6 +25,12 @@ dependencies:
   cupertino_icons: ^0.1.2
   agora_rtc_engine: ^3.2.1
   permission_handler: ^5.0.1  
+  firebase_auth: ^0.20.1
+  firebase_core: ^0.7.0
+  cloud_firestore: ^0.16.0+1
+  provider: ^5.0.0
+  persistent_bottom_nav_bar: ^4.0.2
+  
 
 dev_dependencies:
   flutter_test:
