@@ -1,9 +1,5 @@
-# FACE2FACE Group Vidoe Call
+# FACE2FACE Group Video Call
 
 A WebRTC Group Video Call application using Agora Video Call SDK, CLoud Firestore and Firebase Authentication build with Flutter.
 
-## Resources
-
-- You can find the complete API Documentation over [here](https://docs.agora.io/en/Video/API%20Reference/flutter/index.html).
-- You can refer this [blog](https://meherdeept.medium.com/group-video-calling-using-agoras-flutter-sdk-53abbef1bb55) where I will walk you through the process of building a group video calling application.
-- I also invite you to join [Agora.io Developer Slack Community](https://agoraio.slack.com/). 
+ <img src="screenshots/welcome.png" height="400" alt="Screenshot"/> <img src=“screenshots/register.png" height="400" alt="Screenshot"/>  <img src="screenshots/register.png" height="400" alt="Screenshot"/> <img src=“screenshots/register-invalid.png" height="400" alt="Screenshot"/>  <img src="screenshots/join-channel.png" height="400" alt="Screenshot"/> <img src=“screenshots/video-call.png" height="400" alt="Screenshot"/>  <img src="screenshots/real-time-messaging.png" height="400" alt="Screenshot"/> <img src=“screenshots/profile.png" height="400" alt="Screenshot"/>  

@@ -333,7 +333,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               height: 5.0,
                             ),
                             Text(
-                              'cememirboy',
+                              'cem',
                               style: GoogleFonts.poppins(
                                   fontSize: 15.0,
                                   color: Colors.red[900],
@@ -356,7 +356,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               height: 5.0,
                             ),
                             Text(
-                              'cememirboy',
+                              'cem',
                               style: GoogleFonts.poppins(
                                   fontSize: 15.0,
                                   color: Colors.red[900],
