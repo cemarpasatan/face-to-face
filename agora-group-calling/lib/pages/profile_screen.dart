@@ -114,7 +114,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  "Information",
+                                  "Info",
                                   style: GoogleFonts.poppins(
                                     fontSize: 17.0,
                                     fontWeight: FontWeight.w800,
@@ -379,20 +379,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           GestureDetector(
                             child: !profileProvider.editAge
                                 ? Text(
-                                    '19 yrs',
+                                    '23',
                                     style: GoogleFonts.poppins(
                                         fontSize: 15.0,
                                         color: Colors.red[900],
                                         fontWeight: FontWeight.w500),
                                   )
                                 : SizedBox(
-                                    width: 150,
+                                    width: 140,
                                     height: 30,
                                     child: SpinBox(
                                       min: 10,
                                       max: 100,
-                                      value: 19,
+                                      value: 23,
                                       onChanged: (value) => print(value),
+                                      
                                     ),
                                   ),
                             onTap: () {

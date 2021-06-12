@@ -56,8 +56,14 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       appBar: AppBar(
-        title: Text('Voice Bot'),
+        centerTitle: true,
+        backgroundColor: Colors.black,
+        title: Text(
+          "Face2Face Voice Chat",
+          style: GoogleFonts.poppins(color: Colors.red[700]),
+        ),
       ),
       body: Center(
         child: Align(
@@ -146,6 +152,7 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
         Container(
+          color: Colors.red[900],
           width: MediaQuery.of(context).size.width * 0.55,
           child: TextFormField(
             controller: _channelMessageController,
@@ -153,25 +160,27 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
               hintText: 'Comment...',
               hintStyle: GoogleFonts.poppins(color: Colors.white70),
               border: OutlineInputBorder(
+                
                 borderRadius: BorderRadius.circular(20),
-                borderSide: BorderSide(color: Colors.white70, width: 2),
+                borderSide: BorderSide(color: Colors.black, width: 5),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(20),
-                borderSide: BorderSide(color: Colors.white70, width: 2),
+                borderSide: BorderSide(color: Colors.black, width: 5),
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(20),
-                borderSide: BorderSide(color: Colors.white70, width: 2),
+                borderSide: BorderSide(color: Colors.black, width: 5),
               ),
             ),
           ),
         ),
         Container(
           decoration: BoxDecoration(
+              color: Colors.red[900],
               borderRadius: BorderRadius.all(Radius.circular(40)),
               border: Border.all(
-                color: Colors.white70,
+                color: Colors.black,
                 width: 2,
               )),
           child: IconButton(
@@ -188,9 +197,10 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
         ),
         Container(
           decoration: BoxDecoration(
+              color: Colors.red[900],
               borderRadius: BorderRadius.all(Radius.circular(40)),
               border: Border.all(
-                color: Colors.white70,
+                color: Colors.black,
                 width: 2,
               )),
           child: IconButton(
@@ -206,13 +216,14 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
         ),
         Container(
           decoration: BoxDecoration(
+              color: Colors.red[900],
               borderRadius: BorderRadius.all(Radius.circular(40)),
               border: Border.all(
-                color: Colors.white70,
+                color: Colors.black,
                 width: 2,
               )),
           child: IconButton(
-            icon: Icon(Icons.send, color: Colors.white70),
+            icon: Icon(Icons.send, color: Colors.black),
             onPressed: _toggleSendChannelMessage,
           ),
         )
@@ -239,7 +250,7 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
                                 : Alignment.bottomRight,
                             child: Container(
                               padding: EdgeInsets.only(left: 5, right: 5),
-                              color: Colors.white,
+                              color: Colors.grey.shade400,
                               child: _infoStrings[i].startsWith('%')
                                   ? Text(
                                       _infoStrings[i].substring(1),
@@ -247,7 +258,7 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
                                       overflow: TextOverflow.ellipsis,
                                       textAlign: TextAlign.right,
                                       style: GoogleFonts.poppins(
-                                          color: Colors.black),
+                                          color: Colors.red[900]),
                                     )
                                   : Text(
                                       _infoStrings[i],
@@ -255,7 +266,7 @@ class _RealTimeMessagingState extends State<RealTimeMessaging> {
                                       overflow: TextOverflow.ellipsis,
                                       textAlign: TextAlign.right,
                                       style: GoogleFonts.poppins(
-                                          color: Colors.black),
+                                          color: Colors.red[900]),
                                     ),
                             ),
                           ),

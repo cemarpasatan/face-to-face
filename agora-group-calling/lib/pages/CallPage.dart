@@ -1,5 +1,6 @@
 import 'package:agora_video_call/pages/chat_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../utils/AppID.dart';
 import 'package:agora_rtc_engine/rtc_engine.dart';
 import 'package:agora_rtc_engine/rtc_local_view.dart' as RtcLocalView;
@@ -166,10 +167,16 @@ class _CallPageState extends State<CallPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Agora Group Video Calling'),
-      ),
       backgroundColor: Colors.black,
+      appBar: AppBar(
+        centerTitle: true,
+        backgroundColor: Colors.black,
+        title: Text(
+          "Face2Face",
+          style: GoogleFonts.poppins(color: Colors.red[700]),
+        ),
+      ),
+     
       body: Center(
         child: Stack(
           children: <Widget>[
